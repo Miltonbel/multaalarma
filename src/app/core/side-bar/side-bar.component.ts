@@ -11,5 +11,10 @@ export class SideBarComponent implements OnInit {
 
   ngOnInit() {
   }
+  activeItem: string = 'Categorías';
+
+  setActiveItem(item: string) {
+    this.activeItem = item;
+  }
 
 }

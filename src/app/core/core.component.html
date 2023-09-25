@@ -1,12 +1,12 @@
-<app-header (toggleSideBarForMe)="sideBarToggler($event)"></app-header>
+<app-header id="header-custom" (toggleSideBarForMe)="sideBarToggler($event)"></app-header>
 
 <mat-drawer-container>
     <mat-drawer mode="side" [opened]="sideBarOpen">
-        
+
         <app-side-bar></app-side-bar>
     </mat-drawer>
-    <mat-drawer-content>
-        
+    <mat-drawer-content id="content-detail">
+
         <router-outlet></router-outlet>
     </mat-drawer-content>
 </mat-drawer-container>
